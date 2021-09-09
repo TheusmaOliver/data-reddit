@@ -1,9 +1,13 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   height: 91px;
   background-color: var(--primary-color);
+  padding: 0 1rem;
+}
+.header-logo {
+  width: 150px;
 }
 .header-title {
   margin: 0;

@@ -1,0 +1,9 @@
+.loading {
+  height: calc(100vh - 200px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loading-image {
+  width: 300px;
+}

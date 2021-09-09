@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Cards from "../../../components/Cards/Cards";
+import Loading from "../../../components/Loading/Loading";
 import Api from "../../../services/api";
 
 export default function Hot() {
@@ -18,7 +19,5 @@ export default function Hot() {
     loadDataHot();
   }, []);
 
-  return (
-    <section>{!data ? <div>carregando</div> : <Cards data={data} />}</section>
-  );
+  return <section>{!data ? <Loading /> : <Cards data={data} />}</section>;
 }
