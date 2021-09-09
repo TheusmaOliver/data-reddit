@@ -11,10 +11,13 @@ hr {
 
 .card {
   display: flex;
+  border-top: 1px solid #4c5667;
+  margin-top: 1rem;
+  padding-top: 0.5rem;
 }
 .card-image {
-  width: 4.8rem;
-  height: 4.8rem;
+  max-width: 4.8rem;
+  max-height: 4.8rem;
   margin-right: 0.8rem;
 }
 

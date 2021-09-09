@@ -1,57 +1,37 @@
 import React from "react";
+import reeditLogo from "../../assets/images/reddit.png";
 import "./cards.css";
-export default function Cards() {
+export default function Cards({ data }) {
+  const date = () => {
+    const data = new Date(1631202575);
+    console.log(data.getTimezoneOffset());
+    return;
+  };
+
+  date();
   return (
     <div className="cards">
-      <hr />
-
-      <div className="card">
-        <div className="card-image">
-          <img
-            src="https://dubelectric.com/wp-content/uploads/2016/10/blog-post-img-4-300x174.jpg"
-            alt="imagem do post"
-          />
+      {data.map((item, index) => (
+        <div className="card" key={index}>
+          <div className="card-image">
+            {item.data.post_hint === "image" ? (
+              <img src={item.data.url} alt="imagem do post" />
+            ) : (
+              <img src={reeditLogo} alt="logo reddit" />
+            )}
+          </div>
+          <div className="card-info">
+            <h4 className="card-info__title">{item.data.title}</h4>
+            <span className="card-info__data">
+              enviado há {item.data.created_utc} por
+              <span> {item.data.author}</span>
+            </span>
+            <a href={item.data.url} target="blank" className="card-info__link">
+              link do post
+            </a>
+          </div>
         </div>
-        <div className="card-info">
-          <h4 className="card-info__title">Titulo do post</h4>
-          <span className="card-info__data">
-            enviado há 6 horas por <span>usuario_nickname</span>
-          </span>
-          <button className="card-info__link">link do post</button>
-        </div>
-      </div>
-      <hr />
-      <div className="card">
-        <div className="card-image">
-          <img
-            src="https://dubelectric.com/wp-content/uploads/2016/10/blog-post-img-4-300x174.jpg"
-            alt="imagem do post"
-          />
-        </div>
-        <div className="card-info">
-          <h4 className="card-info__title">Titulo do post</h4>
-          <span className="card-info__data">
-            enviado há 6 horas por <span>usuario_nickname</span>
-          </span>
-          <button className="card-info__link">link do post</button>
-        </div>
-      </div>
-      <hr />
-      <div className="card">
-        <div className="card-image">
-          <img
-            src="https://dubelectric.com/wp-content/uploads/2016/10/blog-post-img-4-300x174.jpg"
-            alt="imagem do post"
-          />
-        </div>
-        <div className="card-info">
-          <h4 className="card-info__title">Titulo do post</h4>
-          <span className="card-info__data">
-            enviado há 6 horas por <span>usuario_nickname</span>
-          </span>
-          <button className="card-info__link">link do post</button>
-        </div>
-      </div>
+      ))}
     </div>
   );
 }

@@ -14,7 +14,7 @@
   padding: 0 1rem;
 }
 
-.navbar-list__item > button {
+.navbar-list__item .btn {
   width: 12.625rem;
   font-size: 1.25rem;
   font-style: normal;
@@ -27,9 +27,10 @@
   border: none;
   outline: none;
   background-color: var(--secondary-color);
+  cursor: pointer;
 }
 
-.navbar-list__item > button:hover,
-.navbar-list__item > button:focus {
+.navbar-list__item > .btn:hover,
+.navbar-list__item > .btn:focus {
   background-color: var(--primary-color);
 }
