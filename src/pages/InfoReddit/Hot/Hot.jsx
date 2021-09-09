@@ -11,7 +11,6 @@ export default function Hot() {
       const data = await Api.get("/r/reactjs/hot.json")
         .then((response) => response.data.data)
         .then((response) => {
-          console.log(response.children);
           setData(response.children);
         });
       return data;

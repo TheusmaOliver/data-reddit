@@ -7,7 +7,7 @@ export default function News() {
   const [data, setData] = useState();
 
   useEffect(() => {
-    async function loadDataHot() {
+    async function loadDataNews() {
       const data = await Api.get("/r/reactjs/new.json")
         .then((response) => response.data.data)
         .then((response) => {
@@ -16,7 +16,7 @@ export default function News() {
         });
       return data;
     }
-    loadDataHot();
+    loadDataNews();
   }, []);
 
   return <section>{!data ? <Loading /> : <Cards data={data} />}</section>;

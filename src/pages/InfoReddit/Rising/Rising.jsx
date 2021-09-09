@@ -7,7 +7,7 @@ export default function Rising() {
   const [data, setData] = useState();
 
   useEffect(() => {
-    async function loadDataHot() {
+    async function loadDataRising() {
       const data = await Api.get("/r/reactjs/rising.json")
         .then((response) => response.data.data)
         .then((response) => {
@@ -16,7 +16,7 @@ export default function Rising() {
         });
       return data;
     }
-    loadDataHot();
+    loadDataRising();
   }, []);
 
   return <section>{!data ? <Loading /> : <Cards data={data} />}</section>;
