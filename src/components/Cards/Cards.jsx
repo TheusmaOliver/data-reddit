@@ -1,14 +1,13 @@
 import React from "react";
+import moment from "moment";
 import reeditLogo from "../../assets/images/reddit.png";
 import "./cards.css";
 export default function Cards({ data }) {
-  const date = () => {
-    const data = new Date(1631202575);
-    console.log(data.getTimezoneOffset());
-    return;
+  const date = (utc) => {
+    const data = new Date(utc * 1000);
+    return moment(data).fromNow();
   };
 
-  date();
   return (
     <div className="cards">
       {data.map((item, index) => (
@@ -23,7 +22,7 @@ export default function Cards({ data }) {
           <div className="card-info">
             <h4 className="card-info__title">{item.data.title}</h4>
             <span className="card-info__data">
-              enviado há {item.data.created_utc} por
+              sent {date(item.data.created_utc)} by
               <span> {item.data.author}</span>
             </span>
             <a href={item.data.url} target="blank" className="card-info__link">
