@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import InfoReddit from "../pages/InfoReddit/InfoReddit";
+import InfoReddit from "../pages/InfoReddit";
 export default function Routes() {
   return (
     <BrowserRouter>

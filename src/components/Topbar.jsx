@@ -1,6 +1,6 @@
 import React from "react";
-import winninLogo from "../../assets/images/winnin-logo.png";
-import "./topbar.css";
+import winninLogo from "../assets/images/winnin-logo.png";
+import "../styles/topbar.css";
 export default function Topbar() {
   return (
     <header className="header">

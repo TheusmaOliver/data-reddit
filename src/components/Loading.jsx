@@ -1,6 +1,6 @@
 import React from "react";
-import "./loading.css";
-import loading from "../../assets/images/progress-circle.gif";
+import "../styles/loading.css";
+import loading from "../assets/images/progress-circle.gif";
 export default function Loading() {
   return (
     <div className="loading">
