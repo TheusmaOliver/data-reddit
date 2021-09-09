@@ -1,10 +1,10 @@
 import React from "react";
 import { Route } from "react-router-dom";
-import Hot from "../Hot/Hot";
-import Navbar from "./Navbar/Navbar";
-import News from "../News/News";
-import Rising from "../Rising/Rising";
-import Topbar from "./Topbar/Topbar";
+import Hot from "./Hot/Hot";
+import Navbar from "../../components/Navbar/Navbar";
+import News from "./News/News";
+import Rising from "./Rising/Rising";
+import Topbar from "../../components/Topbar/Topbar";
 
 export default function InfoReddit() {
   return (
