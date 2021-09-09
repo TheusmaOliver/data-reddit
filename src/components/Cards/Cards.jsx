@@ -26,11 +26,15 @@ export default function Cards({ data }) {
               <span> {item.data.author}</span>
             </span>
             <a href={item.data.url} target="blank" className="card-info__link">
-              link do post
+              view post
             </a>
           </div>
         </div>
       ))}
+      <button className="cards-button">
+        <span className="cards-button__icone">+</span>
+        <span className="cards-button__text">Ver mais</span>
+      </button>
     </div>
   );
 }

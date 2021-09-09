@@ -1,6 +1,6 @@
 .cards {
   width: 80%;
-  margin: 0 auto;
+  margin: 0 auto 1rem;
   display: flex;
   flex-direction: column;
 }
@@ -49,5 +49,44 @@ hr {
 }
 
 .card-info__link {
-  width: 50%;
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 700;
+  border: 1px solid var(--primary-color);
+  max-width: 75px;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+}
+
+.card-info__link:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+.cards-button {
+  margin-top: 1rem;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  height: 3rem;
+  outline: none;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.cards-button__icone {
+  font-size: 2rem;
+  margin-right: 0.5rem;
+}
+
+.cards-button__text {
+  font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  .card-info__title {
+    font-size: 1rem;
+  }
 }

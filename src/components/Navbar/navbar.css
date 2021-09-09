@@ -34,3 +34,21 @@
 .navbar-list__item > .btn:focus {
   background-color: var(--primary-color);
 }
+
+@media (max-width: 768px) {
+  .navbar-list__item {
+    padding: 0 0.5rem;
+  }
+  .navbar-list__item .btn {
+    width: 6rem;
+  }
+}
+@media (max-width: 280px) {
+  .navbar-list__item {
+    padding: 0 0.5rem;
+  }
+  .navbar-list__item .btn {
+    width: 4rem;
+    font-size: 1rem;
+  }
+}
