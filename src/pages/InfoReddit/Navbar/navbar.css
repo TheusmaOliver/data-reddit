@@ -1,0 +1,35 @@
+.navbar {
+  width: 100%;
+}
+
+.navbar-list {
+  margin: 1rem 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-list__item {
+  padding: 0 1rem;
+}
+
+.navbar-list__item > button {
+  width: 12.625rem;
+  font-size: 1.25rem;
+  font-style: normal;
+  line-height: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  background-color: var(--secondary-color);
+}
+
+.navbar-list__item > button:hover,
+.navbar-list__item > button:focus {
+  background-color: var(--primary-color);
+}

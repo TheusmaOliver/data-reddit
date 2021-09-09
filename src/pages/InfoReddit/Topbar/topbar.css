@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 91px;
+  background-color: var(--primary-color);
+}
+.header-title {
+  margin: 0;
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.header-title > span {
+  color: #ffb800;
+}
