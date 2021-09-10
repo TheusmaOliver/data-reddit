@@ -1,23 +1,23 @@
 import React from "react";
 import { useHistory } from "react-router";
 import "../styles/navbar.css";
-export default function Navbar() {
+export default function Navbar({ url }) {
   const router = useHistory();
   return (
     <nav className="navbar">
       <ul className="navbar-list">
         <li className="navbar-list__item">
-          <button onClick={() => router.push("/hot")} className="btn">
+          <button onClick={() => router.push(`${url}/hot`)} className="btn">
             Hot
           </button>
         </li>
         <li className="navbar-list__item">
-          <button onClick={() => router.push("/news")} className="btn">
+          <button onClick={() => router.push(`${url}/new`)} className="btn">
             News
           </button>
         </li>
         <li className="navbar-list__item">
-          <button onClick={() => router.push("/rising")} className="btn">
+          <button onClick={() => router.push(`${url}/rising`)} className="btn">
             Rising
           </button>
         </li>

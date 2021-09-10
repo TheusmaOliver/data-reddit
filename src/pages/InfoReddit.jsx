@@ -1,21 +1,22 @@
-import React from "react";
-import { Route } from "react-router-dom";
-import Hot from "./Hot";
-import Navbar from "../components/Navbar";
-import News from "./News";
-import Rising from "./Rising";
-import Topbar from "../components/Topbar";
+import React, { useEffect, useState } from "react";
+import Cards from "../components/Cards";
+import Loading from "../components/Loading";
+import Api from "../services/api";
 
 export default function InfoReddit() {
-  return (
-    <div>
-      <Topbar />
-      <Navbar />
-      <div className="content">
-        <Route path="/hot" component={Hot} />
-        <Route path="/news" component={News} />
-        <Route path="/rising" component={Rising} />
-      </div>
-    </div>
-  );
+  const [data, setData] = useState();
+
+  useEffect(() => {
+    async function loadDataHot() {
+      const data = await Api.get("/r/reactjs.json")
+        .then((response) => response.data.data)
+        .then((response) => {
+          setData(response.children);
+        });
+      return data;
+    }
+    loadDataHot();
+  }, []);
+
+  return <section>{!data ? <Loading /> : <Cards data={data} />}</section>;
 }

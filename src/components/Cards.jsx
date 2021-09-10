@@ -13,7 +13,7 @@ export default function Cards({ data }) {
       {data.map((item, index) => (
         <div className="card" key={index}>
           <div className="card-image">
-            {item.data.thumbnail !== "self" ? (
+            {item.data.thumbnail.includes("https://") ? (
               <img src={item.data.thumbnail} alt="imagem do post" />
             ) : (
               <img src={reeditLogo} alt="logo reddit" />
