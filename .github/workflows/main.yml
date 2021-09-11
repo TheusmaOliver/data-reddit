@@ -28,8 +28,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@main
       - name: Download Artifact
-        uses: actions/download-artifact@main
+        uses: dawidd6/action-download-artifact@v2 
         with:
+          workflow: main.yml
           name: dist
           path: dist
       - name: Deploy to Firebase
@@ -37,6 +38,7 @@ jobs:
         with:
           args: deploy --only hosting
         env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
           REACT_APP_API_KEY: ${{ secrets.REACT_APP_API_KEY }}
           REACT_APP_APP_ID: ${{ secrets.REACT_APP_APP_ID }}
           REACT_APP_AUTH_DOMAIN: ${{ secrets.REACT_APP_AUTH_DOMAIN }}
