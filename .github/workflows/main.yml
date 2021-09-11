@@ -30,7 +30,6 @@ jobs:
       - name: Download Artifact
         uses: dawidd6/action-download-artifact@v2 
         with:
-          workflow: main.yml
           name: dist
           path: dist
       - name: Deploy to Firebase
