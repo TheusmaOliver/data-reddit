@@ -19,7 +19,7 @@ jobs:
         uses: actions/upload-artifact@main
         with:
           name: dist
-          path: dist
+          path: build
   deploy:
     name: Deploy
     needs: build
@@ -28,10 +28,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@main
       - name: Download Artifact
-        uses: dawidd6/action-download-artifact@v2 
+        uses: actions/download-artifact@main
         with:
           name: dist
-          path: dist
+          path: build
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
