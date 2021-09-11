@@ -49,21 +49,32 @@ Certo agora vamos para algumas dependências específicas:
   
 Axios é um cliente HTTP baseado em Promises para fazer requisições. Pode ser utilizado tanto no navegador quando no Node.js.
   
+```bash
+$ yarn add axios
+```
+	
   - **[FireBase](https://firebase.google.com/)**
   
 Firebase é uma plataforma de desenvolvimento mobile (e web) adquirida pela Google em 2014. Com foco em ser um Back-end completo e de fácil usabilidade, essa ferramenta disponibiliza diversos serviços diferentes que auxiliam no desenvolvimento e gerenciamento de aplicativos.Mais usualmente para desenvolvedores Front-end,pois não necessita fazer um Back-end para sua aplicação.
-  
+
+```bash
+$ yarn add firebase
+```
+	
  - **[MomentJS](https://momentjs.com/)**
 
 MomentJS serve para te auxiliar a deixar as datas melhores no seu projeto. Utilizei para transformar uma data UTC em data normal.
 
 ```bash
-yarn add moment
+$ yarn add moment
 ```
   - **[React Router Dom](https://reactrouter.com/web/guides/quick-start)**
 
 O React Router é uma lib completa para controle de rotas que permite que você consiga configurar as rotas utilizando o formato JSX e também disponibiliza uma API para você configurar diretamente via Javascript.
 
+```bash
+$ yarn add react-router-dom
+```
 
   
 ## Tecnologias
