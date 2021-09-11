@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+<p align="center">
+  <a href="https://www.winnin.com">
+    <img src="src/assets/images/logo.svg" height="150" width="175" alt="logo winnin" />
+  </a>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h1 align="center">Info Reddit</h1>
 
-## Available Scripts
+<p align="center"> Recurso para ler dados do Reddit, do Subreddit ReactJS!🚀</p>
 
-In the project directory, you can run:
+<div align="center">
 
-### `yarn start`
+[![winnin](https://img.shields.io/badge/Feature-Winnin-%237159c1?style=for-the-badge&logo=ghost)](https://www.winnin.com)<space><space>
+![Badge](https://img.shields.io/badge/License-Mit-%237159c1?style=for-the-badge&logo=ghost)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+</div>
+  
+<h2 align="center"> 
+	🚧  Info Reddit 🚀 Em construção...  🚧
+</h2>
+  
+## Sobre
+  
+Esse recurso serve para você visualizar em tempo real os posts do Subreddit do [ReactJS](https://www.reddit.com/r/reactjs/), e tem como filtro os posts mais populares (Hot), posts novos (News) e os posts que estão ficando populares (Rising). 
+  
+## Instalação
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Antes de começar, você vai precisar ter instalado em sua máquina a seguinte ferramenta: [Node.js](https://nodejs.org/en/). 
+Além disto é preciso ter um editor para trabalhar com o código, eu recomendo o [VSCode](https://code.visualstudio.com/).
+Após a instalação dessas ferramentas para poder ter o projeto na sua máquina é necessario que execute esse seguinte comando no seu terminal/cmd:
 
-### `yarn test`
+```bash
+$ git clone https://github.com/TheusmaOliver/data-reddit
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Após clonar o repositorio, precisa instalar as dependências necessárias:
+ - npm
+```bash
+$ npm install
+```
+   - yarn
+```bash
+$ yarn install
+```
 
-### `yarn build`
+Certo agora vamos para algumas dependências específicas:
+  
+  - **[Axios](https://www.npmjs.com/package/axios)**
+  
+Axios é um cliente HTTP baseado em Promises para fazer requisições. Pode ser utilizado tanto no navegador quando no Node.js.
+  
+  - **[FireBase](https://firebase.google.com/)**
+  
+Firebase é uma plataforma de desenvolvimento mobile (e web) adquirida pela Google em 2014. Com foco em ser um Back-end completo e de fácil usabilidade, essa ferramenta disponibiliza diversos serviços diferentes que auxiliam no desenvolvimento e gerenciamento de aplicativos.Mais usualmente para desenvolvedores Front-end,pois não necessita fazer um Back-end para sua aplicação.
+  
+ - **[MomentJS](https://momentjs.com/)**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+MomentJS serve para te auxiliar a deixar as datas melhores no seu projeto. Utilizei para transformar uma data UTC em data normal.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+yarn add moment
+```
+  - **[React Router Dom](https://reactrouter.com/web/guides/quick-start)**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+O React Router é uma lib completa para controle de rotas que permite que você consiga configurar as rotas utilizando o formato JSX e também disponibiliza uma API para você configurar diretamente via Javascript.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+  
+## Tecnologias
+  
+- [Node.js](https://nodejs.org/en/)
+- [React](https://pt-br.reactjs.org/)
+  
+## Autor
+  
+ <img style="border-radius: 50%;" src="https://avatars3.githubusercontent.com/u/81190214?s=460&u=61b426b901b8fe02e12019b1fdb67bf0072d4f00&v=4" width="100px;" alt="Avatar"/>
+ <br />
+ <b width="36px">Matheus Rodrigues 🚀</b>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Feito com ❤️ por Matheus Rodrigues 👋🏽 Entre em contato!
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[![Linkedin Badge](https://img.shields.io/badge/-Matheus-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/theusmaoliver/)](https://www.linkedin.com/in/theusmaoliver/) 
+[![Gmail Badge](https://img.shields.io/badge/-matheusrodriguesoliveira273@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:matheusrodriguesoliveira273@gmail.com)](mailto:matheusrodriguesoliveira273@gmail.com)
