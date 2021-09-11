@@ -81,6 +81,7 @@ $ yarn add react-router-dom
   
 - [Node.js](https://nodejs.org/en/)
 - [React](https://pt-br.reactjs.org/)
+- [FireBase](https://firebase.google.com/)
   
 ## Autor
   
