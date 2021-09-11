@@ -8,7 +8,6 @@ import { AuthContext } from "../contexts/AuthContext";
 export default function Login() {
   const router = useHistory();
   const { signInWithGoogle, user } = useContext(AuthContext);
-
   async function signIn() {
     if (!user) {
       await signInWithGoogle();

@@ -9,6 +9,7 @@ import InfoReddit from "./InfoReddit";
 export default function Home() {
   let { path, url } = useRouteMatch();
   const { user } = useContext(AuthContext);
+
   return (
     <div>
       <Topbar user={user} />

@@ -8,7 +8,7 @@ export default function FilterInfo() {
   let { infoId } = useParams();
   const [data, setData] = useState();
   const [loading, setLoading] = useState(true);
-  console.log(data, loading);
+
   useEffect(() => {
     setLoading(true);
     const timer = setTimeout(async () => {

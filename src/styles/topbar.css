@@ -1,17 +1,31 @@
 .header {
+  background-color: var(--primary-color);
+  position: sticky;
+  left: auto;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  z-index: 999999;
+}
+
+.header-content {
+  width: 1240px;
+  height: 60px;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0;
+  padding-left: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 91px;
-  background-color: var(--primary-color);
-  padding: 0 1rem;
-  position: sticky;
-  top: 0;
 }
 .header-logo {
-  width: 150px;
+  width: 90px;
 }
 .header-title {
+  width: 300px;
+  text-align: center;
   margin: 0;
   font-size: 2.25rem;
   font-weight: 700;
@@ -22,9 +36,38 @@
   color: #ffb800;
 }
 
+.header-info {
+  max-width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 45px;
+}
+.header-image__avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.header-info__button {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  border: 1px solid #fff;
+  background-color: transparent;
+  max-width: 75px;
+  padding: 0.3rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.header-info__button:hover {
+  background-color: #fff;
+  color: var(--primary-color);
+}
+
 @media (max-width: 768px) {
-  .header {
-    height: 60px;
+  .header-content {
+    width: 90%;
   }
   .header-logo {
     width: 100px;
