@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
-import "../styles/login.css";
-import svgLogoWinnin from "../assets/images/logo.svg";
-import svgLogoGoogle from "../assets/images/google-icon.svg";
+import "../../styles/login.css";
+import svgLogoWinnin from "../../assets/images/logo.svg";
+import svgLogoGoogle from "../../assets/images/google-icon.svg";
 import { useHistory } from "react-router";
-import { AuthContext } from "../contexts/AuthContext";
+import { AuthContext } from "../../contexts/AuthContext";
 
 export default function Login() {
   const router = useHistory();
