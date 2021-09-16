@@ -1,15 +1,13 @@
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import { AuthContextProvider } from "./contexts/AuthContext";
-import Home from "./pages/Home";
-import Login from "./pages/Login/Login";
+import Router from './Router'
 
 function App() {
   return (
     <div>
       <BrowserRouter>
         <AuthContextProvider>
-          <Route path="/" exact component={Login} />
-          <Route path="/inforeddit" component={Home} />
+          <Router/>
         </AuthContextProvider>
       </BrowserRouter>
     </div>

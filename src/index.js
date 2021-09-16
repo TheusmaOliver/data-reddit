@@ -3,9 +3,8 @@ import ReactDOM from "react-dom";
 import "./styles/global.css";
 import App from "./App";
 import "./services/firebase";
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+    <App />,
   document.getElementById("root")
 );
