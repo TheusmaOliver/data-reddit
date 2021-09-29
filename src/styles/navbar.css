@@ -30,8 +30,7 @@
   cursor: pointer;
 }
 
-.navbar-list__item > .btn:hover,
-.navbar-list__item > .btn:focus {
+.btn:hover {
   background-color: var(--primary-color);
 }
 
