@@ -1,15 +1,13 @@
-import { Switch, Route } from 'react-router-dom'
-import Login from './pages/Login/Login';
-import Home from './pages/Home';
+import { Switch, Route } from "react-router-dom";
+import Home from "./pages/Home";
 
 const Router = () => {
-    return ( 
-        <Switch>
-            <Route path="/" exact component={Login} />
-            <Route path="/inforeddit/:filter?" component={Home} />
-            <Route path="/inforeddit" component={Home} />
-        </Switch>
-    );
-}
- 
+  return (
+    <Switch>
+      <Route path="/" exact component={Home} />
+      <Route path="/inforeddit/:filter?" exact component={Home} />
+    </Switch>
+  );
+};
+
 export default Router;
