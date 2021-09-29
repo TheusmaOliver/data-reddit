@@ -53,14 +53,6 @@ Axios é um cliente HTTP baseado em Promises para fazer requisições. Pode ser 
 $ yarn add axios
 ```
 	
-  - **[FireBase](https://firebase.google.com/)**
-  
-Firebase é uma plataforma de desenvolvimento mobile (e web) adquirida pela Google em 2014. Com foco em ser um Back-end completo e de fácil usabilidade, essa ferramenta disponibiliza diversos serviços diferentes que auxiliam no desenvolvimento e gerenciamento de aplicativos.Mais usualmente para desenvolvedores Front-end,pois não necessita fazer um Back-end para sua aplicação.
-
-```bash
-$ yarn add firebase
-```
-	
  - **[MomentJS](https://momentjs.com/)**
 
 MomentJS serve para te auxiliar a deixar as datas melhores no seu projeto. Utilizei para transformar uma data UTC em data normal.
@@ -81,8 +73,8 @@ $ yarn add react-router-dom
   
 - [Node.js](https://nodejs.org/en/)
 - [React](https://pt-br.reactjs.org/)
-- [FireBase](https://firebase.google.com/)
   
+	
 ## Autor
   
  <img style="border-radius: 50%;" src="https://avatars3.githubusercontent.com/u/81190214?s=460&u=61b426b901b8fe02e12019b1fdb67bf0072d4f00&v=4" width="100px;" alt="Avatar"/>
