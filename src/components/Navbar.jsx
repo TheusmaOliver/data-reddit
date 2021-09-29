@@ -1,27 +1,14 @@
 import React from "react";
-import { useHistory } from "react-router";
+import { NavLink } from "react-router-dom";
 import "../styles/navbar.css";
-export default function Navbar({ url }) {
-  const router = useHistory();
+
+export default function Navbar({links}) {
+
   return (
     <nav className="navbar">
-      <ul className="navbar-list">
-        <li className="navbar-list__item">
-          <button onClick={() => router.push(`${url}/hot`)} className="btn">
-            Hot
-          </button>
-        </li>
-        <li className="navbar-list__item">
-          <button onClick={() => router.push(`${url}/new`)} className="btn">
-            News
-          </button>
-        </li>
-        <li className="navbar-list__item">
-          <button onClick={() => router.push(`${url}/rising`)} className="btn">
-            Rising
-          </button>
-        </li>
-      </ul>
+      {links && links.map(link => (
+        <NavLink to={link.url}>{link.name}</NavLink>
+      ))}
     </nav>
   );
 }
