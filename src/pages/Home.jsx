@@ -31,12 +31,7 @@ export default function Home() {
       <Topbar />
       <Navbar links={linksArray} />
       {loading && <Loading />}
-      <Cards data={data} />
-      {after && (
-        <div>
-          <button onClick={() => handleLoadMorePost()}>Ver Mais</button>
-        </div>
-      )}
+      <Cards data={data} after={after} loadMore={handleLoadMorePost} />
     </div>
   );
 }

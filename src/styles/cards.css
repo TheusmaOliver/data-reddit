@@ -59,18 +59,21 @@
   background-color: var(--primary-color);
   color: #fff;
 }
+
 .cards-button {
   margin-top: 1rem;
   color: #ffffff;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   background-color: var(--primary-color);
   height: 3rem;
+  font-size: 1.5rem;
   outline: none;
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
+  width: 100%;
 }
 .cards-button__icone {
   font-size: 2rem;
