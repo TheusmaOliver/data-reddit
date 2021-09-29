@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://www.winnin.com">
-    <img src="src/assets/images/logo.svg" height="150" width="175" alt="logo winnin" />
+    <img src="src/assets/images/svgWinnin.svg" height="150" width="175" alt="logo winnin" />
   </a>
 </p>
 
