@@ -13,21 +13,20 @@ const date = (utc) => {
 };
 
 // Deixando os dados legível para os componentes
-const formatPostData = (data) => {
+const formatPostData = (data) =>
   data &&
-    data.map((post) => {
-      return {
-        title: post.data.title,
-        thumbnail: post.data.thumbnail.includes("https://")
-          ? post.data.thumbnail
-          : redditLogo,
-        date: date(post.data.created_utc),
-        author: post.data.author,
-        url: post.data.url,
-        id: post.data.name,
-      };
-    });
-};
+  data.map((post) => {
+    return {
+      title: post.data.title,
+      thumbnail: post.data.thumbnail.includes("https://")
+        ? post.data.thumbnail
+        : redditLogo,
+      date: date(post.data.created_utc),
+      author: post.data.author,
+      url: post.data.url,
+      id: post.data.name,
+    };
+  });
 
 // Array com as rotas
 const linksArray = [

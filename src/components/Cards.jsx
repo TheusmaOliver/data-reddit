@@ -5,7 +5,7 @@ import "../styles/cards.css";
 export default function Cards({ data, after, loadMore }) {
   return (
     <div className="cards">
-      {data && data.map((post) => <Card post={post} key={post.data.name} />)}
+      {data && data.map((post) => <Card post={post} key={post.id} />)}
       {after && (
         <div className="button-after">
           <button className="cards-button" onClick={() => loadMore()}>
