@@ -1,6 +1,11 @@
 import moment from "moment";
 import redditLogo from "../assets/images/reddit.png";
 
+const redditUrl = (filter) => {
+  if (filter) return `https://www.reddit.com/r/reactjs/${filter}.json?limit=5`;
+
+  return `https://www.reddit.com/r/reactjs.json?limit=5`;
+};
 // Função para converter UTC e data legivel
 const date = (utc) => {
   const data = new Date(utc * 1000);
@@ -40,4 +45,4 @@ const linksArray = [
   },
 ];
 
-export { date, formatPostData, linksArray };
+export { date, formatPostData, linksArray, redditUrl };
